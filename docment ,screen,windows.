@@ -1,0 +1,41 @@
+1.Window:
+
+*The window object represents the browser window or tab that contains the document. It is the top-level JavaScript object in the browser's
+ object model hierarchy.
+*Every tab or window in a browser has its own window object, which serves as the global object for that particular browsing context.
+*Properties and methods of the window object include things like window.innerWidth (width of the browser window), window.
+location (current URL of the document), and methods for interacting with the browser such as window.alert() and window.open().
+
+
+2.screen
+In JavaScript, the screen object represents the properties and dimensions of the user's screen or monitor. 
+It provides information about the screen's size, pixel depth, and other related properties. Here are some key 
+aspects of the screen object:
+
+Properties:
+
+screen.width: Returns the width of the screen in pixels.
+screen.height: Returns the height of the screen in pixels.
+screen.availWidth: Returns the width of the screen's available workspace, excluding taskbars and other system elements.
+screen.availHeight: Returns the height of the screen's available workspace, excluding taskbars and other system elements.
+screen.pixelDepth: Returns the bit depth of the screen (number of bits per pixel).
+screen.colorDepth: Returns the bit depth of the screen (usually same as pixelDepth).
+Usage:
+
+*The screen object is primarily used to adjust the layout or functionality of a web page based on the user's screen resolution 
+or other screen-related properties.
+*It can be used to create responsive designs or to optimize the display of content based on available screen space.
+Example:
+console.log("Screen width: " + screen.width);
+console.log("Screen height: " + screen.height);
+console.log("Available screen width: " + screen.availWidth);
+console.log("Available screen height: " + screen.availHeight);
+console.log("Screen pixel depth: " + screen.pixelDepth);
+console.log("Screen color depth: " + screen.colorDepth);
+
+3.Document:
+
+*The document object is a property of the window object and represents the HTML document currently displayed in that window.
+*It is the root node of the HTML document object model (DOM) which represents the structure of the document as a tree of objects.
+*The document object provides methods and properties to access and manipulate elements and content within the current webpage.
+For example, document.getElementById() is used to retrieve an element by its ID, document.createElement() creates a new HTML element, and document.title gives the title of the current document.
